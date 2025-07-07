@@ -124,8 +124,6 @@ def multi_turn_chat(file_path, chroma_path):
 
         if keyword_list:
             print("🔍 Extracted keywords:", keyword_list)
-
-        if keyword_list:
             keywords_str = " ".join(keyword_list)
             enriched_query = f"{query_text} 관련 키워드: {keywords_str}"
         else:
